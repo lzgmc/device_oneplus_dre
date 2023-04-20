@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_dre.mk
+    $(LOCAL_DIR)/aosp_dre.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_dre-user \
-    lineage_dre-userdebug \
-    lineage_dre-eng
+    aosp_dre-user \
+    aosp_dre-userdebug \
+    aosp_dre-eng
