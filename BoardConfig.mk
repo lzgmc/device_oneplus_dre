@@ -130,6 +130,9 @@ BOARD_VENDOR_KERNEL_MODULES_LOAD := $(strip $(shell cat $(DEVICE_PATH)/modules.l
 # Metadata
 BOARD_USES_METADATA_PARTITION := true
 
+# NFC
+DEVICE_MANIFEST_FILE += hardware/st/nfc/aidl/nfc-service-default.xml
+
 # Partitions
 BOARD_BOOTIMAGE_PARTITION_SIZE := 100663296
 BOARD_DTBOIMG_PARTITION_SIZE := 8388608
