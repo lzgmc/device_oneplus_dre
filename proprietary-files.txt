@@ -510,7 +510,6 @@ odm/etc/camera/eis_camera.vcfg
 odm/etc/camera/fb_default
 odm/etc/camera/fwk_config.json
 odm/etc/camera/gasryuv_1.2_wp.model
-odm/etc/camera/license_release_fdc.lic
 odm/etc/camera/model_fdc.data
 odm/etc/camera/settings_fdc.txt
 odm/lib/libc++_shared.so
@@ -1130,6 +1129,7 @@ system_ext/priv-app/ims/ims.apk|f0d834acbc77e7830459e0246f5073e1b9ba8657
 
 # IMS
 vendor/bin/ims_rtp_daemon
+vendor/bin/imsdaemon
 vendor/etc/init/imsdaemon.rc
 vendor/etc/init/ims_rtp_daemon.rc
 vendor/etc/seccomp_policy/imsrtp.policy
@@ -1230,6 +1230,7 @@ vendor/etc/media_holi/video_system_specs.json
 vendor/etc/video_system_specs.json
 vendor/etc/seccomp_policy/codec2.vendor.base-arm.policy
 vendor/etc/seccomp_policy/codec2.vendor.ext-arm.policy
+vendor/etc/vintf/manifest/c2_manifest_vendor.xml
 vendor/lib/libqcodec2_base.so
 vendor/lib/libqcodec2_basecodec.so
 vendor/lib/libqcodec2_core.so
