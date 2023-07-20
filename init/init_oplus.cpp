@@ -11,9 +11,6 @@
 
 using android::base::GetProperty;
 
-constexpr const char* BUILD_DESCRIPTION = "OnePlusN200TMO-user 12 SKQ1.210216.001 11462c5_991-19c1d8 release-keys";
-constexpr const char* BUILD_FINGERPRINT = "OnePlus/OnePlusN200TMO/OnePlusN200TMO:12/SKQ1.210216.001/R.202306151713:user/release-keys";
-
 constexpr const char* RO_PROP_SOURCES[] = {
     nullptr,
     "bootimage.",
@@ -59,10 +56,8 @@ void OverrideCarrierProperties() {
     for (const auto& source : RO_PROP_SOURCES) {
         ro_prop_override(source, "model", "DE2118", true);
         ro_prop_override(source, "device", "OnePlusN200TMO", true);
-        ro_prop_override(source, "fingerprint", BUILD_FINGERPRINT, false);
     }
     ro_prop_override(nullptr, "product", "OnePlusN200TMO", false);
-    ro_prop_override(nullptr, "description", BUILD_DESCRIPTION, false);
 }
 
 /*
